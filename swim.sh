@@ -47,7 +47,7 @@ user_config() {
 
   touch "${ENV_FILE}"
 
-  python "${SWIM_USER_CONFIG_DIR_SRC}/swim_user_config/main.py" -c "${SWIM_USER_CONFIG_DIR}/config.json" -o "${ENV_FILE}" ${P}
+  python3 "${SWIM_USER_CONFIG_DIR_SRC}/swim_user_config/main.py" -c "${SWIM_USER_CONFIG_DIR}/config.json" -o "${ENV_FILE}" ${P}
 
   if is_windows
   then
